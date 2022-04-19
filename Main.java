@@ -55,7 +55,7 @@ public class Main {
 
     }
 
-    static void ativdade5(){
+    static void ativdade5() {
         double valoInicial, valorFinal, velocidadeInicial, aceleracao, tempo;
         System.out.println("Entre com o espaço inicial:");
         valoInicial = myObj1.nextDouble();
@@ -65,7 +65,7 @@ public class Main {
         aceleracao = myObj1.nextDouble();
         System.out.println("Entre com o tempo:");
         tempo = myObj1.nextDouble();
-        valorFinal = valoInicial + velocidadeInicial*tempo + (aceleracao*tempo*tempo)/2;
+        valorFinal = valoInicial + velocidadeInicial * tempo + (aceleracao * tempo * tempo) / 2;
         System.out.println("O espaço final será: " + valorFinal);
     }
 
@@ -83,7 +83,7 @@ public class Main {
             atividade4();
         }
         if (atividade == 5) {
-
+            ativdade5();
         }
     }
 
