@@ -47,12 +47,15 @@ public class Main {
         System.out.println("Entre com a quantidade de termos (n)");
         n = myObj1.nextDouble();
         // calcular qn
-        for (int i = 0; i < n; i++) {
-            numeroRazao = numeroRazao * q;
+        if (q >= 2) {
+            for (int i = 0; i < n; i++) {
+                numeroRazao = numeroRazao * q;
+            }
+            somaTermos = (a1 * (numeroRazao - 1)) / (q - 1);
+            System.out.println("O valor da soma é " + somaTermos);
+        } else {
+            System.out.println("O valor de q é menor que 2. Tente novamente com um valor maior ou igual a 2");
         }
-        somaTermos = (a1 * (numeroRazao - 1)) / (q - 1);
-        System.out.println("O valor da soma é " + somaTermos);
-
     }
 
     static void ativdade5() {
